@@ -4,3 +4,4 @@
 *.class
 /bin
 .DS_Store
+src/main/resources/config/
