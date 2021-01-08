@@ -15,7 +15,7 @@ import org.springframework.web.client.RestTemplate;
 public class NutritionixApiService {
 	
 	private RestTemplate rt = new RestTemplate();
-	private HttpHeaders headers = new HttpHeaders();
+	//private HttpHeaders headers = new HttpHeaders();
 	
 	public void nutritionixTestCall() {
 		
@@ -26,6 +26,7 @@ public class NutritionixApiService {
 			ex.printStackTrace();
 		}
 		
+		HttpHeaders headers = new HttpHeaders();
 		
 		  headers.add("x-user-jwt", "0"); 
 		  headers.add("x-app-id", prop.getProperty("appid"));
@@ -49,6 +50,7 @@ public class NutritionixApiService {
 			ex.printStackTrace();
 		}
 		
+		HttpHeaders headers = new HttpHeaders();
 		
 		  headers.add("x-user-jwt", "0"); 
 		  headers.add("x-app-id", prop.getProperty("appid"));
